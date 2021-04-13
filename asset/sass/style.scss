@@ -1,0 +1,71 @@
+@import './resets', './mixins', './variables', './navbar';
+
+body {
+    background-color: $white-color;
+    min-height: 100vh;
+    // overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: $width-max;
+    background: $white-color;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.my-logo {
+    width: 150px;
+    height: 70px;
+    // line-height: 60px;
+    // font-weight: 700;
+    // font-size: 2em;
+    // text-decoration: none !important;
+    // cursor: pointer;
+    // padding-left: 20px;
+    color: set-text-color($primary-color);
+}
+
+section {
+    position: relative;
+    @include flexCenter;
+    min-height: 100vh;
+    color: set-text-color($primary-color);
+    font-size: 18vw;
+    font-weight: 700;
+}
+
+
+.social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding: 0.4rem;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $purple-color;
+      }
+    }
+  }
+
+  footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1.2rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+
+ 

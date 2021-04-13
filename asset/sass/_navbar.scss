@@ -1,0 +1,113 @@
+@import './mixins', './variables';
+
+#toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: $purple-color;
+    cursor: pointer;
+    @include flexCenter;
+
+    &:before {
+        @include pseudo-toggle(translateY(-5px));
+    }
+
+    &:after {
+        @include pseudo-toggle(translateY(5px));
+    }
+}
+
+#toggle.active {
+    background: $tomato-color;
+
+    &:before {
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    &:after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+}
+
+#navbar {
+    position: relative;
+    height: 60px;
+    right: 60px;
+    background: $white-color;
+    transition: 0.5s;
+    width: 0px;
+    overflow: hidden;
+
+    &.active {
+        width: 660px;
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #12334e;
+                height: 60px;
+                line-height: 60px;
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.5em;
+                padding: 0 15px;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: $white-color;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background: $purple-color;
+                }
+            }
+        }
+    }
+}
+
+@include laptop {
+    #navbar {
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: $width-max;
+        transition: 0.5s;
+        @include flexCenter;
+
+        &.active {
+            height: calc(100vh - 60px);
+            bottom: 0;
+            width: $width-max;
+        }
+        
+        ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

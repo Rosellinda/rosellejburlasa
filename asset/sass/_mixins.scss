@@ -1,0 +1,23 @@
+@import './_variables.scss';
+
+@mixin pseudo-toggle($transform) {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: $white-color;
+    transition: 0.2s;
+    transform: $transform;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin laptop {
+    @media (max-width: $laptop){
+        @content
+    }
+}
