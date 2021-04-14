@@ -1,4 +1,4 @@
-@import './resets', './mixins', './variables', './navbar', './loading';
+@import './resets', './mixins', './variables', './navbar', './loading', './home';
 
 body {
     background-color: $white-color;
@@ -43,23 +43,29 @@ section {
 
     a {
       padding: 0.4rem;
-      transition: all 0.5s ease-in-out;
-
-      &:hover {
-        color: $purple-color;
-      }
+      transition: all 0.5s ease-in-out;   
     }
   }
 
-  footer {
-    font-size: 1rem;
-    position: fixed;
-    bottom: 1rem;
-    right: 1.2rem;
-    text-align: right;
-    padding: 1rem;
-    color: set-text-color($primary-color);
-    transform: rotate(90deg) translate(-3rem, -5rem);
+  i {
+    color: purple;
+
+    &:hover {
+      color: orange;
+    }
   }
 
- 
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1.2rem;
+  text-align: right;
+  padding: 1rem;
+  font-weight: 700;
+  color: purple;
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+
+

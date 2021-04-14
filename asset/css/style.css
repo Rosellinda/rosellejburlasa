@@ -215,6 +215,37 @@ body.loaded {
     transform: rotate(-720deg);
   }
 }
+#labelDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+#labelDiv h1 {
+  font-size: 28px;
+}
+#labelDiv h1 span {
+  color: orange;
+}
+#labelDiv h4 {
+  font-size: 14px;
+}
+
+#profilePic {
+  height: 150px;
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  #profilePic {
+    height: 250px;
+    width: 250px;
+  }
+}
 body {
   background-color: #ffff;
   min-height: 100vh;
@@ -260,8 +291,12 @@ section {
   padding: 0.4rem;
   transition: all 0.5s ease-in-out;
 }
-.social-icons a:hover {
-  color: #9051ff;
+
+i {
+  color: purple;
+}
+i:hover {
+  color: orange;
 }
 
 footer {
@@ -271,7 +306,8 @@ footer {
   right: 1.2rem;
   text-align: right;
   padding: 1rem;
-  color: set-text-color(#0000);
+  font-weight: 700;
+  color: purple;
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 

@@ -1,0 +1,32 @@
+@import './mixins', './variables';
+
+#labelDiv {
+    position: absolute;
+    @include flexCenter;
+    flex-direction: column;
+    z-index: 1;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    h1{
+      font-size: 28px;
+  
+      span{
+        color: orange;
+      }
+    }
+    h4{
+      font-size: 14px;
+    }  
+  }
+  
+#profilePic {
+    height: 150px;
+    width: 150px;
+}
+
+@include tablet {
+    #profilePic {
+        height: 250px;
+        width: 250px;
+    }
+}

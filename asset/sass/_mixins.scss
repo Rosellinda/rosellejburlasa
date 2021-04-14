@@ -21,3 +21,10 @@
         @content
     }
 }
+
+@mixin tablet {
+    @media (min-width: $tablet){
+        @content
+    }
+}
+

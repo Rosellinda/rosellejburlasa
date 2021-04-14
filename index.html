@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="./asset/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
     <title>Roselle Burlasa</title>
 </head>
 <body>
@@ -42,7 +41,13 @@
     </header>
     <div class="container">
         <section id="home">
-            <h1>Hello</h1>
+            <canvas id="stars"></canvas>
+            <div id="labelDiv">
+                <img src="./asset/img/profile img.jpg" class="img-fluid rounded-circle" alt="profilePic" id="profilePic">
+                <h1 class="text-center pt-5 text-white">Roselle <span class="surname">Burlasa</span></h1>
+                <h4 class="text-center text-white">Front End Web Developer</h4>
+                <button type="button" class="btn btn-outline-warning mt-2"><i class="fas fa-download text-white fa-sm"></i> Download Resume</button>
+            </div>
         </section>
         <section id="about">
             <h1>About</h1>
@@ -70,7 +75,6 @@
         </div>
         <footer>&copy; Copyright <script>document.write(new Date().getFullYear())</script></footer>
     </div>
-    <!-- FOOTER -->
 
     <script src="https://kit.fontawesome.com/54dd48c648.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
