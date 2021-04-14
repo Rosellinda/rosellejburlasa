@@ -1,4 +1,4 @@
-@import './resets', './mixins', './variables', './navbar';
+@import './resets', './mixins', './variables', './navbar', './loading';
 
 body {
     background-color: $white-color;
@@ -19,14 +19,8 @@ header {
 }
 
 .my-logo {
-    width: 150px;
+    width: 100px;
     height: 70px;
-    // line-height: 60px;
-    // font-weight: 700;
-    // font-size: 2em;
-    // text-decoration: none !important;
-    // cursor: pointer;
-    // padding-left: 20px;
     color: set-text-color($primary-color);
 }
 
