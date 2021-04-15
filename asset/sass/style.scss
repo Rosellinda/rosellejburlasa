@@ -1,4 +1,4 @@
-@import './resets', './mixins', './variables', './navbar', './loading', './home';
+@import './resets', './mixins', './variables', './navbar', './loading', './home', './about';
 
 body {
     background-color: $white-color;
@@ -66,6 +66,4 @@ footer {
   color: purple;
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
-
-
 
