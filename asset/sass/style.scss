@@ -1,4 +1,4 @@
-@import './resets', './mixins', './variables', './navbar', './loading', './home', './about';
+@import './resets', './mixins', './variables', './navbar', './loading', './home', './about', './projects';
 
 body {
     background-color: $white-color;
@@ -67,3 +67,9 @@ footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.bg-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
