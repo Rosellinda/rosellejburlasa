@@ -8,31 +8,31 @@
     text-align: left;
   }
   
-  .skills li{
-    list-style: none;
-    flex: 0 0 50%;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  .certificates {
-    padding: 20px;
-    border: thick double orange;
-  }
-  
-  .certificates li{
-    font-size: 15px;
-    text-align: left;
-    list-style: none;
-    padding: 0 0 0 20px;
-  }
-
- 
-
-  @mixin laptop {
-    @media (max-width: $laptop){
-        .certificates {
-            width: 25%;
-        }
-    }
+.skills li{
+  list-style: none;
+  flex: 0 0 50%;
+  justify-content: center;
+  align-content: center;
 }
+ 
+.tools h2:after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 25px auto 0 auto;
+}
+
+.tools .col-2 img {
+  width: 80px;
+  height:70px;
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

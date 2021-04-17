@@ -116,5 +116,3 @@ function updateStars() {
     window.requestAnimationFrame(updateStars);
 }
 
-
-

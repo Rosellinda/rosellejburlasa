@@ -1,0 +1,15 @@
+@import './mixins', './variables';
+
+#projects .card-group .card {
+    width: 100%;
+    height: 450px;
+}
+
+@mixin tablet {
+    @media (min-width: $tablet){
+        #projects .card-group .card {
+            width: 400px;
+            height: 450px;
+        }
+    }
+}

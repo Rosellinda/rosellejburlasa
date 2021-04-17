@@ -1,0 +1,17 @@
+@import './mixins', './variables';
+#contact {
+    width: 100%;
+    min-height: 50vh;
+}
+
+#contact-info h2:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 25px auto 0 auto;
+}
