@@ -6,14 +6,21 @@
     margin: 0;
     padding: 0;
     text-align: left;
+
+    li{
+      list-style: none;
+      flex: 0 0 50%;
+      justify-content: center;
+      align-content: center;
+    }
   }
   
-.skills li{
-  list-style: none;
-  flex: 0 0 50%;
-  justify-content: center;
-  align-content: center;
-}
+// .skills li{
+//   list-style: none;
+//   flex: 0 0 50%;
+//   justify-content: center;
+//   align-content: center;
+// }
  
 .tools h2:after {
   content: '';
