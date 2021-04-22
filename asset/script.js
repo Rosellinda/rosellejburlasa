@@ -15,7 +15,7 @@ $(document).ready(function() {
 	// Will remove overlay after 1min for users cannnot load properly.
 	setTimeout(function() {
 		$('.overlay, body').addClass('loaded');
-	}, 60000);
+	}, 30000);
 
 
 })
@@ -48,12 +48,6 @@ let screen, starsElements, starsParams = { speed: 2, number: 300, extinction: 4 
 setupStars();
 updateStars();
 
-// handle slider
-// output.innerHTML = slider.value;
-// slider.oninput = function() {
-//     output.innerHTML = this.value;
-//     starsParams.speed = this.value;
-// };
 
 // update stars on resize to keep them centered
 window.onresize = function() {
