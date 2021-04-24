@@ -1,7 +1,9 @@
 @import './mixins', './variables';
 
 body {
-	// overflow: hidden;
+	overflow: hidden;
+	margin: 0;
+	padding-bottom: 0;
 	&.loaded {
 		overflow-y: auto;
 	}
