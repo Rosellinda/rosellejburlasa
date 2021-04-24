@@ -1,6 +1,6 @@
 @import './mixins', './variables';
 
-.tools h2:after {
+.tools h3:after {
   @include hrStryle;
 }
 
