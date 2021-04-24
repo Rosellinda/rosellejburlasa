@@ -64,7 +64,7 @@
 
                 &:hover {
                     color: $white-color;
-                    font-weight: bold;
+                    font-weight: $font-weight;
                     text-transform: uppercase;
                     background: $purple-color;
                 }

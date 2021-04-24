@@ -16,8 +16,6 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$('.overlay, body').addClass('loaded');
 	}, 30000);
-
-
 })
 
 const header = document.getElementById('header');

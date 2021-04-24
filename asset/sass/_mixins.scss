@@ -16,15 +16,26 @@
     align-items: center;
 }
 
+@mixin tablet {
+    @media (max-width: $tablet){
+        @content
+    }
+}
+
+@mixin hrStryle {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 25px auto 0 auto;
+}
+
 @mixin laptop {
     @media (max-width: $laptop){
         @content
     }
 }
-
-@mixin tablet {
-    @media (min-width: $tablet){
-        @content
-    }
-}
-

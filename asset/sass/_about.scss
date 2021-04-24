@@ -1,46 +1,14 @@
 @import './mixins', './variables';
-.skills {
-    font-size: 11px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    text-align: left;
 
-    li{
-      list-style: none;
-      flex: 0 0 50%;
-      justify-content: center;
-      align-content: center;
-    }
-  }
-  
-// .skills li{
-//   list-style: none;
-//   flex: 0 0 50%;
-//   justify-content: center;
-//   align-content: center;
-// }
- 
 .tools h2:after {
-  content: '';
-  display: block;
-  width: 150px;
-  height: 2px;
-  background-color: orange;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 25px auto 0 auto;
+  @include hrStryle;
 }
 
 .tools .col-2 img {
   width: 80px;
   height:70px;
   flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   border-radius: 30%;
 }
 

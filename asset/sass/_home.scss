@@ -5,13 +5,14 @@
     @include flexCenter;
     flex-direction: column;
     z-index: 1;
-    color: white;
-    font-family: 'Lato', sans-serif;
+    color: $white-color;
+    font-family: $font-weight;
+
     h1{
       font-size: 28px;
   
       span{
-        color: orange;
+        color: $orange-color;
       }
     }
     h4{
