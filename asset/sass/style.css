@@ -244,16 +244,16 @@
   padding: 30px 18px;
 }
 
-#cards_landscape_wrap-2 .card-flyer .text-box p {
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container p {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #0000;
+  color: black;
 }
 
-#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container h6 {
   margin-top: 0px;
   margin-bottom: 4px;
   font-size: 18px;
