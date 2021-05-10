@@ -1,14 +1,14 @@
 @import './mixins', './variables';
 
-.tools h3:after {
-  @include hrStryle;
-}
+// .tools h3:after {
+//   @include hrStryle;
+// }
 
-.tools .col-2 img {
-  width: 80px;
-  height:70px;
-  flex-flow: row wrap;
-  @include flexCenter;
-  border-radius: 30%;
-}
+// .tools .col-2 img {
+//   width: 80px;
+//   height:70px;
+//   flex-flow: row wrap;
+//   @include flexCenter;
+//   border-radius: 30%;
+// }
 
